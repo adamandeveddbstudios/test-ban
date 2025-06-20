@@ -7,7 +7,26 @@ var legalView;
 var legalButton;
 var root;
 
-
+var tl = new TimelineMax({
+		onComplete: function(){
+			//Establish timeline will lopp to .6 second mark on complete - loop after banner "fades in" (cover autoAlpha off)
+			//tl.play(.6)
+	
+			if(repeatIndex < 1){
+				repeatIndex++;
+				tl.play(.3)
+			}
+	
+			endTime = new Date();
+			var timeDiff = endTime - startTime; //in ms
+			// strip the ms
+			timeDiff /= 1000;
+			// get seconds 
+			var seconds = timeDiff;
+			//Log time - comment out for production
+			//console.log(seconds + " seconds");
+		}
+	});	
 
 
 function getOS() {
@@ -156,26 +175,7 @@ buildTimeline = function(e){
 	var repeatIndex = 0;
 
 	
-	var tl = new TimelineMax({
-		onComplete: function(){
-			//Establish timeline will lopp to .6 second mark on complete - loop after banner "fades in" (cover autoAlpha off)
-			//tl.play(.6)
 	
-			if(repeatIndex < 1){
-				repeatIndex++;
-				tl.play(.3)
-			}
-	
-			endTime = new Date();
-			var timeDiff = endTime - startTime; //in ms
-			// strip the ms
-			timeDiff /= 1000;
-			// get seconds 
-			var seconds = timeDiff;
-			//Log time - comment out for production
-			//console.log(seconds + " seconds");
-		}
-	});	
 
 
 	
