@@ -196,14 +196,7 @@ div.roofline {
     position: absolute;
 }
 
-.text{
-  font-family: 'Knockout', Arial, Helvetica, sans-serif;
-  text-align: center;
-  backface-visibility: hidden;
-  /* text-transform: uppercase; */
-  position: absolute;
-  text-rendering: optimizeLegibility;
-}
+
 .text span{
   display: block;
   font-size: inherit;
@@ -219,16 +212,32 @@ div.roofline {
 .text .red{
   color: #eb1844;
 }
-#text-1, #text-2, #text-3{
-    width: 110px;
-    top: 11px;
-    font-size: 12px;
-    line-height: 10px;
-    left: 2px;
-}
+#text-1, #text-2, #text-3 {
+  width: 110px;
+  top: 11px;
+  left: 2px;
+  position: absolute;
 
-:root{
-  --legal-height: 30px;
+  font-family: 'Knockout', Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 14px; /* more breathing space */
+  font-weight: normal;
+
+  text-align: center;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricPrecision;
+}
+.char {
+  display: inline-block;
+  transform: none;
+  transform-origin: center center;
+  line-height: 1;
+  vertical-align: middle;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #legal-view {

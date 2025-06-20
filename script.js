@@ -176,11 +176,15 @@ buildTimeline = function(e){
 
 	
 	
-
-
-	
 	var staggerDelay = .1;
 	var staggerDuration = 1.5;
+gsap.set(text1.chars, {
+  scale: 1,
+  x: 0,
+  y: 0,
+  opacity: 1,
+  transformOrigin: "center center"
+});
 	tl.to("#cover", .3, {autoAlpha: 0})
 
 	
