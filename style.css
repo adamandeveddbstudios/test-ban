@@ -179,7 +179,7 @@ div.roofline {
   line-height: 13.5px;
 }
 
-.text, #cta{
+ #cta{
   font-family: 'Knockout', Arial, Helvetica, sans-serif;
   backface-visibility: hidden;
   text-transform: uppercase;
@@ -197,9 +197,11 @@ div.roofline {
 }
 
 .text{
+  font-family: 'Knockout', Arial, Helvetica, sans-serif;
   text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  /* text-transform: uppercase; */
+  position: absolute;
   text-rendering: optimizeLegibility;
 }
 .text span{
