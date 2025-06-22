@@ -62,16 +62,15 @@ html, body {
 .copy .red {
   color: #eb1844;
 }
-
 .char {
-  font-size: inherit;
-  font-weight: inherit;
   display: inline-block;
+  opacity: 0;
+  transform: translateZ(0); /* Force GPU layer for stability */
+  will-change: opacity, transform;
   vertical-align: middle;
-  line-height: inherit;
-  transform: none !important;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "kern", "liga", "clig", "calt";
 }
 
 #car {
