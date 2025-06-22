@@ -45,32 +45,35 @@ html, body {
   width: 320px;
   height: 50px;
 }
-
 .copy {
   font-family: 'Knockout';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  width: 110px;
-  top: 10.5px;
-  left: 0.5px;
-  position: absolute;
   font-size: 12px;
   line-height: 10px;
   font-weight: normal;
-  text-align: center;
+  letter-spacing: 0.02em;
   color: #003DA5;
+  position: absolute;
+  top: 10.5px;
+  left: 0.5px;
+  width: 110px;
+  text-align: center;
 }
 
-.copy .red{
+.copy .red {
   color: #eb1844;
 }
+
 .char {
-  font-weight: normal;
   font-size: inherit;
-  vertical-align: baseline;
+  font-weight: inherit;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: inherit;
   transform: none !important;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
 }
+
 #car {
   transform: scale(0.9);
   will-change: transform;
