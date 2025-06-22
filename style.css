@@ -1,302 +1,95 @@
 @font-face {
   font-family: 'Knockout';
-  src: url("Knockout-HTF50-Welterweight-Regular.woff") format("woff");
+  src: url("./fonts/Knockout-HTF50-Welterweight-Regular.woff") format("woff");
   font-style: normal;
+  font-display: swap;
 }
-html {
-  -webkit-text-size-adjust: 100%;
-     -ms-text-size-adjust: 100%;
-         text-size-adjust: 100%;
-}
-sup{
-  line-height: 0; 
-  font-size: .6em;
-}
-
-p{
-  margin:0;
-}
-
-div{
+* {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #ffffff;
-  vertical-align: baseline;
-  border: 0 none;
-  outline: 0;
-  padding: 0;
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.absolute {
+  position:absolute;
+  height: auto;
+}
+
+sup, sub {
+  font-size: 50%;
+}
+
+html, body {
+  width:320px;
+  height:50px;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
 }
 
-#dummy {
-  position: absolute;
-  width: 320px;
-  height: 50px;
+#main {
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:320px;
+  height:50px;
+  background-color: #0C479D;
+  border: solid 1px #000000;
+  overflow: hidden;
+}
+.full-width {
+  position:absolute;
+  left: 0px;
   top: 0px;
-  left: 0px;
-  opacity: .5;
-  background: url('./ref_2.jpg') no-repeat center;
-  background-size: 100% 100%;
-  z-index: 200;
-  box-sizing: border-box;
-}
-
-#banner_container_dc {
   width: 320px;
   height: 50px;
-  /* border: 1px solid #eaeaea; */
-  position: relative;
-  color: white;
-  overflow: hidden;
-  box-sizing: border-box;
 }
 
-#content_dc {
-  width: 320px;
-  height: 50px;
-  bottom: 0px;
-  left: 0px;
-  background-color: #fff;
-  background-size: 320px auto;
-  z-index: 100;
-  box-sizing: border-box;
-}
-
-
-#backgroundExit1 {
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  position: absolute;
-  cursor: pointer;
-  z-index: 500;
-  background: rgba(0,0,0,0);
-}
-
-#border-container{
-  position: absolute;
-  top:0;
-  left:0;
-  width: 100%;
-  height: 100%;
-  border: 1px solid #000000;
-  z-index: 520;
-  pointer-events: none;
-}
-
-
-
-.assets{
-  box-sizing: border-box;
-}
-
-.assets img,
-.assets > div{
-  position: absolute;
-  width: 100%;
-  transform: translateZ(1px);
-}
-.assets > div{
-  height: 100%;
-}
-
-.image-container{
-  overflow: hidden;
-}
-
-
-
-#cover{
-  width:100%;
-  height:100%;
-  position: absolute;
-  top:0;
-  left:0;
-  background: #ffffff;
-}
-
-
-div.roofline {
-  top: -3px;
-  left: 3px;
-
-  position: absolute;
-  height: 200px;
-  width: 95px;
-  overflow: hidden;
-
-  background-image: url(roofline.png);
-  background-repeat: no-repeat;
-  background-size: 95px auto;
-}
-
-.assets .bar{
-  position: absolute;
-  width: 100%;
-  height: 39px;
-  right:0;
-  bottom:0;
-  /* background: rgba(0,255,0,.6); */
-  overflow: hidden;
-}
-
-#logo{
-  position: absolute;
-  top: 25px;
-  left: 233px;
-  width: 106.5px;
-  transform-origin: 0 0;
-  image-rendering: optimizeQuality;
-  transform: scale(.5);
-}
-
-#cta{
- -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: subpixel-antialiased;
-  text-shadow: 0 0 50px black;
-  overflow: hidden;
-  top: 10px;
-    left: 263px;
-    font-size: 7px;
-    width: 49.5px;
-    height: 13px;
-    background-color: #003DA5;
-    border-radius: 4px;
-    text-align: center;
-    line-height: 14px;
-    color: #fff;
-}
-.Windows #cta{
-  line-height: 13.5px;
-}
-
- #cta{
-  font-family: 'Knockout', Arial, Helvetica, sans-serif;
-  backface-visibility: hidden;
-  text-transform: uppercase;
-  position: absolute;
-
-  font-variant: small-caps;
-  text-rendering: optimizeLegibility;
-}
-
-#cta_1{
-  top: 7px;
-    left: 234px;
-    width: 51px;
-    position: absolute;
-}
-
-
-.text span{
-  display: block;
-  font-size: inherit;
-  line-height: inherit;
-  vertical-align: baseline;
-  text-rendering: optimizeLegibility;
+.copy {
+  font-family: 'Knockout';
   -webkit-font-smoothing: antialiased;
-}
-
-.text .blue{
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  width: 110px;
+  top: 10.5px;
+  left: 0.5px;
+  position: absolute;
+  font-size: 12px;
+  line-height: 10px;
+  font-weight: normal;
+  text-align: center;
   color: #003DA5;
 }
-.text .red{
+
+.copy .red{
   color: #eb1844;
 }
-#text-1, #text-2, #text-3 {
-  width: 110px;
-  top: 11px;
-  left: 2px;
+
+
+#car {
+  transform: scale(0.9);
+  will-change: transform;
+  backface-visibility: hidden; /* Optional: Helps with 3D rendering artifacts */
+  transition: transform 0.1s ease-in-out;
+}
+
+#default_exit{
+  top:-1px;
+  left:-1px;
+  width: 320px;
+  height: 50px;
+}
+
+.btn{
   position: absolute;
-
-  font-family: 'Knockout', Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  line-height: 14px; /* more breathing space */
-  font-weight: normal;
-
-  text-align: center;
-  backface-visibility: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: geometricPrecision;
-}
-.char {
-  display: inline-block;
-  transform: none;
-  transform-origin: center center;
-  line-height: 1;
-  vertical-align: middle;
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#legal-view {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  position: absolute;
-  background: #505050;
-  width: 100%;
-  height:  auto;
-  top: 0;
-  right: 0;
-  margin-top: -100%;
-  transition: all .4s ease-out;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 6px;
-  padding: 4px 12px 14px 5px;
-  line-height: 1.3em;
-  font-weight: 400;
-  color: #fff;
-  text-align: left;
-  z-index: 510;
-  opacity: 95%;
-}
-
-#legal-view .close {
-    position: absolute;
-    right: 3px;
-    top: 0px;
-    line-height: 1.3em;
-    font-size: 10px;
-}
-
-#legal-view.open {
-  margin-top: 0px;
-}
-
-#legal-button {
-  position: absolute;
+  top:0px;
+  left:0px;
   cursor: pointer;
-  background: #505050;
-  color: #fff;
-  font-size: 4px;
-  line-height: 10px;
-  width: 20px;
-  height: 9px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 500;
-  top: 0;
-  right: 0;
-  z-index: 511;
-  text-align: center;
-  transition: all .4s ease-out;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+  z-index: 200;
 }
 
-#legal-button.open {
-  opacity: 0;
-}
+:focus{outline: 0}
 
-#legal-button.hide {
-  top: -8px;
-}
-
+::-moz-focus-inner{border: 0}
