@@ -65,8 +65,12 @@ html, body {
 .copy .red{
   color: #eb1844;
 }
-
-
+.char {
+  font-weight: normal;
+  font-size: inherit;
+  vertical-align: baseline;
+  transform: none !important;
+}
 #car {
   transform: scale(0.9);
   will-change: transform;
