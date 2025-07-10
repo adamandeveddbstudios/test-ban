@@ -47,16 +47,17 @@ html, body {
 }
 .copy {
   font-family: 'Knockout';
-  font-size: 12px;
-  line-height: 10px;
+  font-size: 16px;
+  line-height: 13.5px;
   font-weight: normal;
   letter-spacing: 0.02em;
   color: #003DA5;
   position: absolute;
-  top: 10.5px;
+  top: 3.5px;
   left: 0.5px;
   width: 110px;
   text-align: center;
+  transform: scale(0.7);
 }
 
 .copy .red {
